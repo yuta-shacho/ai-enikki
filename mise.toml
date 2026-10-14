@@ -2,3 +2,12 @@
 node = "24.21.0"
 go = "1.27.2"
 pnpm = "12.13.0"
+golangci-lint = "2.14.0"
+
+[tasks.lint]
+description = "lint と整形の確認"
+run = ["pnpm exec oxlint --no-error-on-unmatched-pattern", "pnpm exec oxfmt --check"]
+
+[tasks.fmt]
+description = "整形する"
+run = "pnpm exec oxfmt"

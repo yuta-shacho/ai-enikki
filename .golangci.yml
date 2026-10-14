@@ -1,0 +1,12 @@
+version: "2"
+
+linters:
+  default: standard
+  enable:
+    # エラーの比較やラップの書き方を確かめる（errors.Is / errors.As / %w）
+    - errorlint
+
+formatters:
+  enable:
+    - gofmt
+    - goimports
