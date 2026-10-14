@@ -1,0 +1,35 @@
+# OS・エディタ
+.DS_Store
+.idea/
+.vscode/*
+!.vscode/extensions.json
+
+# 環境変数（例のファイルだけ管理する）
+.env
+.env.*
+!.env.example
+
+# Node.js
+node_modules/
+.pnpm-store/
+*.tsbuildinfo
+coverage/
+
+# Next.js
+.next/
+out/
+
+# Go
+/bin/
+*.test
+*.out
+coverage.html
+
+# CDK
+cdk.out/
+
+# mise（個人の上書き設定）
+mise.local.toml
+
+# Claude Code（個人の設定）
+.claude/settings.local.json
